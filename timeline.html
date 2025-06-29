@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História dos Sistemas Operacionais (com Linux)</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    #timeline-embed {
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📅 Linha do Tempo: História dos Sistemas Operacionais</h1>
+  <div id="timeline-embed"></div>
+
+  <script>
+    // Dados da linha do tempo (formato TimelineJS)
+    const timelineData = {
+      "title": {
+        "text": {
+          "headline": "Evolução dos Sistemas Operacionais",
+          "text": "Desde o Unix (1969) até os dias atuais, com destaque para o Linux."
+        }
+      },
+      "events": [
+        {
+          "start_date": { "year": "1969" },
+          "text": {
+            "headline": "Unix (Bell Labs)",
+            "text": "Criado por Ken Thompson e Dennis Ritchie. Base para Linux e macOS."
+          },
+          "media": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg",
+            "caption": "Evolução do Unix"
+          }
+        },
+        {
+          "start_date": { "year": "1985" },
+          "text": {
+            "headline": "Windows 1.0 (Microsoft)",
+            "text": "Primeira versão do Windows, ainda dependente do MS-DOS."
+          },
+          "media": {
+            "url": "https://upload.wikimedia.org/wikipedia/en/2/20/Windows1.0.png",
+            "caption": "Windows 1.0"
+          }
+        },
+        {
+          "start_date": { "year": "1991" },
+          "text": {
+            "headline": "Linux (Linus Torvalds)",
+            "text": "Kernel open-source lançado por Linus Torvalds. Hoje é a base do Android, servidores e supercomputadores."
+          },
+          "media": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
+            "caption": "Tux, o pinguim do Linux"
+          }
+        },
+        {
+          "start_date": { "year": "2008" },
+          "text": {
+            "headline": "Android (Google)",
+            "text": "Sistema móvel baseado no kernel Linux. Dominou o mercado de smartphones."
+          },
+          "media": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Android_logo_2019.svg",
+            "caption": "Logo do Android"
+          }
+        },
+        {
+          "start_date": { "year": "2021" },
+          "text": {
+            "headline": "Windows 11 (Microsoft)",
+            "text": "Última versão do Windows, com integração ao Android."
+          },
+          "media": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Windows_11_Logo.svg",
+            "caption": "Windows 11"
+          }
+        }
+      ]
+    };
+
+    // Inicializa a linha do tempo
+    document.addEventListener('DOMContentLoaded', function() {
+      new TL.Timeline('timeline-embed', timelineData);
+    });
+  </script>
+</body>
+</html>
