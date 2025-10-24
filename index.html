@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Curso Técnico em Informática gratuito IFCE Tianguá - excelência federal e alta empregabilidade. Vagas abertas!">
-  <meta name="keywords" content="curso técnico informática, gratuito, IFCE Tianguá, vagas, Ceará, desenvolvimento web, redes, cibersegurança">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Curso Técnico em Informática gratuito IFCE Tianguá - metodologia federal, infraestrutura moderna e alta empregabilidade."
+  />
+  <meta
+    name="keywords"
+    content="curso técnico informática, gratuito, IFCE Tianguá, vagas, Ceará, desenvolvimento web, redes, cibersegurança"
+  />
   <title>Curso Técnico em Informática - IFCE Tianguá</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header id="topo">
-    <h1>Curso Técnico em Informática<br>IFCE – Campus Tianguá</h1>
-    <p>
-      Capacite-se para o setor que mais cresce! Educação gratuita, excelência federal e infraestrutura completa.<br>
+  <header id="topo" role="banner">
+    <h1 tabindex="0">
+      Curso Técnico em Informática<br />
+      IFCE – Campus Tianguá
+    </h1>
+    <p tabindex="0">
+      Capacite-se para o setor que mais cresce! Educação gratuita,
+      excelência federal e infraestrutura completa.<br />
       Vagas para quem concluiu o Ensino Médio!
     </p>
-    <button class="cta" onclick="scrollToSection('inscricao')">Inscreva-se Agora – Vagas Limitadas</button>
+    <button
+      class="cta"
+      aria-label="Inscreva-se agora - vagas limitadas"
+      onclick="scrollToSection('inscricao')"
+    >
+      Inscreva-se Agora – Vagas Limitadas
+    </button>
   </header>
 
-  <nav>
-    <a href="#sobre">O Curso</a>
-    <a href="#diferenciais">Diferenciais</a>
-    <a href="#carreira">Carreira</a>
-    <a href="#inscricao">Inscrição</a>
-    <a href="#contato">Contato</a>
+  <nav role="navigation" aria-label="Menu principal">
+    <ul class="menu">
+      <li><a href="#sobre">O Curso</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#carreira">Carreira</a></li>
+      <li><a href="#inscricao">Inscrição</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
   </nav>
 
-  <main class="container">
-    <section id="sobre">
-      <h2>Público-Alvo</h2>
+  <main class="container" role="main">
+    <section id="sobre" tabindex="-1" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Público-Alvo</h2>
       <p>
-        Estudantes com Ensino Médio concluído interessados em tecnologia e profissionais em busca de requalificação.
+        Estudantes com Ensino Médio concluído interessados em tecnologia e
+        profissionais que buscam requalificação para o mercado de trabalho.
       </p>
+
       <h2>Estrutura Curricular</h2>
-      <ul class="icons-list">
+      <ul class="icons-list" aria-label="Principais tópicos do curso">
         <li>💻 Desenvolvimento Web</li>
         <li>🔢 Lógica de Programação</li>
         <li>🌐 Redes de Computadores</li>
@@ -41,88 +61,173 @@
         <li>📊 Banco de Dados</li>
         <li>🤝 Ética e Empreendedorismo</li>
       </ul>
+
       <h2>Informações do Curso</h2>
       <ul>
         <li>Modalidade: Presencial – Subsequente</li>
         <li>Duração: 3 semestres (1 ano e meio)</li>
-        <li>Carga Horária: 1200h</li>
+        <li>Carga Horária: 1200 horas</li>
         <li>Turno: Vespertino</li>
         <li>Vagas anuais: 80</li>
-        <li>Processo seletivo via edital, análise de histórico escolar</li>
+        <li>Processo seletivo via edital, com análise do histórico escolar</li>
       </ul>
     </section>
 
-    <section id="diferenciais">
-      <h2>Diferenciais do IFCE Tianguá</h2>
+    <section
+      id="diferenciais"
+      tabindex="-1"
+      aria-labelledby="titulo-diferenciais"
+      >
+      <h2 id="titulo-diferenciais">Diferenciais do IFCE Tianguá</h2>
       <ul>
-        <li>11 laboratórios (hardware, redes, softwares)</li>
-        <li>Infraestrutura moderna: salas, auditório, biblioteca</li>
-        <li>Corpo docente: mestres e doutores</li>
-        <li>Projetos de extensão e iniciação científica</li>
+        <li>11 laboratórios equipados com hardware e softwares atualizados</li>
+        <li>Infraestrutura moderna com salas de aula, auditório e biblioteca</li>
+        <li>Corpo docente formado por mestres e doutores</li>
+        <li>Projetos de extensão, pesquisa e iniciação científica</li>
       </ul>
     </section>
 
-    <section>
+    <section aria-label="Depoimentos de alunos">
       <h2>Depoimentos de Alunos</h2>
       <div class="testimonials">
         <blockquote>
-          <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Foto aluno">
-          "A estrutura de laboratório e professores do IFCE Tianguá fazem toda diferença no mercado."<br>
-          – Pedro Martins, egresso 2024
+          <img
+            src="https://randomuser.me/api/portraits/men/44.jpg"
+            alt="Foto do aluno Pedro Martins"
+          />
+          <p>
+            "A estrutura de laboratório e a qualidade dos professores do IFCE
+            Tianguá fizeram toda a diferença para minha inserção no mercado."
+          </p>
+          <footer>– Pedro Martins, egresso 2024</footer>
         </blockquote>
+
         <blockquote>
-          <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Foto aluna">
-          "Durante o curso pude participar de projetos reais e fui contratada logo após a conclusão."<br>
-          – Maria Alves, turma 2023
+          <img
+            src="https://randomuser.me/api/portraits/women/56.jpg"
+            alt="Foto da aluna Maria Alves"
+          />
+          <p>
+            "Durante o curso, participei de projetos reais e consegui emprego
+            logo após a conclusão."
+          </p>
+          <footer>– Maria Alves, turma 2023</footer>
         </blockquote>
       </div>
-      <div class="logos">
-        <img src="https://portal.ifce.edu.br/static/img/logo-ifce.33a8d77.png" alt="Logo IFCE">
+      <div class="logos" aria-label="Logotipo IFCE">
+        <img
+          src="https://portal.ifce.edu.br/static/img/logo-ifce.33a8d77.png"
+          alt="Logo do IFCE"
+        />
       </div>
     </section>
 
-    <section id="carreira">
-      <h2>Oportunidades de Carreira</h2>
+    <section
+      id="carreira"
+      tabindex="-1"
+      aria-labelledby="titulo-carreira"
+      >
+      <h2 id="titulo-carreira">Oportunidades de Carreira</h2>
       <ul>
         <li>Desenvolvedor Júnior</li>
         <li>Técnico de Suporte</li>
         <li>Administrador de Redes</li>
         <li>Analista de Segurança</li>
       </ul>
-      <button class="cta" onclick="scrollToSection('inscricao')">Quero me inscrever</button>
+      <button class="cta" onclick="scrollToSection('inscricao')">
+        Quero me inscrever
+      </button>
     </section>
 
-    <section id="inscricao">
-      <h2>Receba Atualizações do Processo Seletivo</h2>
-      <form class="form-lead" name="leadForm">
+    <section
+      id="inscricao"
+      tabindex="-1"
+      aria-labelledby="titulo-inscricao"
+      >
+      <h2 id="titulo-inscricao">Receba Atualizações do Processo Seletivo</h2>
+      <form class="form-lead" name="leadForm" novalidate>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" required>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" required>
-        <label for="fone">Telefone (opcional):</label>
-        <input type="tel" id="fone">
-        <button type="submit" class="cta">Quero receber novidades</button>
-      </form>
-      <br>
-      <a href="https://ifce.funetec.org.br/editais/visualizar/500f744873f1b0084d938ca910c9ec76_931.pdf" target="_blank" rel="noopener" class="cta">Visualizar Edital</a>
-      <a href="https://portal.ifce.edu.br/documents/4370/PPC_Tecnico_em_Informatica_Tiangua.pdf" target="_blank" rel="noopener" class="cta">Manual do Curso</a>
-    </section>
+        <input type="text" id="nome" name="nome" required aria-required="true" />
 
-    <section id="contato">
-      <h2>Contato & Localização</h2>
-      <p>E-mail: <a href="mailto:direcao@tiangua.ifce.edu.br">direcao@tiangua.ifce.edu.br</a></p>
-      <p>WhatsApp: <a href="https://wa.me/558834553081">+55 88 3455-3081</a></p>
-      <div class="map-responsive">
-        <iframe src="https://maps.app.goo.gl/37y225ePJ1uTXBvV9" width="600" height="430" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa IFCE Tianguá"></iframe>
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-required="true"
+          pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+          title="Digite um e-mail válido"
+        />
+
+        <label for="fone">Telefone (opcional):</label>
+        <input type="tel" id="fone" name="fone" pattern="^+?d{8,15}$" title="Telefone válido com DDD" />
+
+        <button type="submit" class="cta" aria-label="Enviar cadastro para receber novidades">
+          Quero receber novidades
+        </button>
+        <div
+          id="formMessage"
+          role="alert"
+          aria-live="polite"
+          style="margin-top:10px;"
+        ></div>
+      </form>
+
+      <div class="links-edital">
+        <a
+          href="https://ifce.funetec.org.br/editais/visualizar/500f744873f1b0084d938ca910c9ec76_931.pdf"
+          target="_blank"
+          rel="noopener"
+          class="cta"
+          >Visualizar Edital</a
+        >
+        <a
+          href="https://portal.ifce.edu.br/documents/4370/PPC_Tecnico_em_Informatica_Tiangua.pdf"
+          target="_blank"
+          rel="noopener"
+          class="cta"
+          >Manual do Curso</a
+        >
       </div>
     </section>
 
-    <button class="cta" onclick="scrollToSection('inscricao')">Inscreva-se já!</button>
+    <section
+      id="contato"
+      tabindex="-1"
+      aria-labelledby="titulo-contato"
+      >
+      <h2 id="titulo-contato">Contato & Localização</h2>
+      <p>
+        E-mail:
+        <a href="mailto:direcao@tiangua.ifce.edu.br">direcao@tiangua.ifce.edu.br</a>
+      </p>
+      <p>
+        WhatsApp:
+        <a href="https://wa.me/558834553081">+55 88 3455-3081</a>
+      </p>
+      <p>
+        <a
+          href="https://www.google.com/maps/place/IFCE+-+Campus+Tiangu%C3%A1/@-3.7362236,-40.6842463,17z/data=!3m1!4b1!4m6!3m5!1s0x7ea15703ec7d0df:0x7bab95f27e07e445!8m2!3d-3.7362236!4d-40.6842463!16s%2Fg%2F11b6dr4j07?entry=ttu"
+          target="_blank"
+          rel="noopener"
+          class="cta"
+          >Ver mapa do campus no Google Maps</a
+        >
+      </p>
+    </section>
+
+    <button class="cta final" onclick="scrollToSection('inscricao')">
+      Inscreva-se já!
+    </button>
   </main>
-  <footer>
-    &copy; 2025 IFCE Tianguá. Esta página utiliza protocolo HTTPS. Campus: Avenida Tabelião Luiz Nogueira de Lima, Tianguá, CE, CEP 62324-075.<br>
+
+  <footer role="contentinfo">
+    &copy; 2025 IFCE Tianguá. Esta página utiliza protocolo HTTPS. Campus:
+    Avenida Tabelião Luiz Nogueira de Lima, Tianguá, CE, CEP 62324-075.<br />
     Telefone: (88) 3455-3081
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
